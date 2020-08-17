@@ -1,0 +1,16 @@
+Take a password, hash it with HASHLIB
+
+Boot password using bash from txt file or directly load it with user input?
+
+User input enters a password for a user and hashes it
+
+Then the codes creates a SQL database and stores the password hashed
+
+
+The password is then unhashed upon retrieval
+
+Connect to the internet with Django? And use SSL and POST to master password
+
+
+
+

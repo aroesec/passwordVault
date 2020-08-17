@@ -1,0 +1,33 @@
+Requirements.txt
+
+#TODO create an actual reqs
+
+ 
+db_user = aroe
+password = if you know you know
+dbname  = passwordsafedb
+
+
+
+To create DB use https://pythonspot.com/python-database-postgresql/
+
+
+django
+
+cryptography
+
+pip install psycopg2=2.7.5
+
+pip install psycopg2-binary
+
+pip install self
+
+sudo apt install postgresql-client-common
+
+from haslib import sha256
+
+
+peewee?
+
+
+import re

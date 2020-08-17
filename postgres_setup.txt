@@ -1,0 +1,11 @@
+##Here's how to set up your local postgres account
+Resources: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+
+$sudo -i -u postgres (switches you to a postgres user)
+
+$psql (gets you access to the postgres cli)
+
+\q (quits the prompt)
+
+$sudo -u postgres psql (gets you access to the prompt without switching the user)
+

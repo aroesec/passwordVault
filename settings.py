@@ -16,10 +16,10 @@ ADMINS = (
 #sets database connection from database file 
 DATABASES = {
     'default': {
-        'ENGINE': 'postgresql_psycopg2',
-        'NAME': 'passwordsafedb',
-        'USER': 'aroe',
-        'PASSWORD': 'Coldwell980869#',
+        'ENGINE': os.environ(ENGINE),
+        'NAME': os.environ(NAME),
+        'USER': os.environ(USER),
+        'PASSWORD': os.environ(PASSWORD),
         'HOST': '127.0.0.1',
         'PORT': '5432'
     }

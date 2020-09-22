@@ -1,8 +1,9 @@
+from getpass import getpass
 import hashlib
 
 def hash_me():
     raw = hashlib.new('sha256')   #declares new hash 
-    clientPass = input("enter your password to be hashed: ") #updates declared hash with password
+    clientPass = getpass("enter your password to be hashed: ") #updates declared hash with password
     byteTransform = bytes(q, 'utf-8')
     raw.update(w) #this is stringing q instead of insert q as stored input TODO FIX
     close = raw.hexdigest()  #digests and hashes password

@@ -5,9 +5,9 @@ def hash_me():
     raw = hashlib.new('sha256')   #declares new hash
     while True:
         clientPass = getpass("enter your password to be hashed: ") #updates declared hash with password
-        check_clientPass = getpass("re-type password: ") #retype password to check for accuracy
-        if clientPass != check_clientPass: #check if password was entered correctly
-            print("password did not match, try again:") #if passwords do to not match, loop
+        checkClientPass = getpass("re-type password: ") #retype password to check for accuracy
+        if clientPass != checkClientPass: #check if passwords were entered correctly and match
+            print("password did not match, try again:") #if passwords do not match, loop
         else:
             break #if passwords match, break out of loop
     byteTransform = bytes(q, 'utf-8')

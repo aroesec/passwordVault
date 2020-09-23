@@ -2,8 +2,14 @@ from getpass import getpass
 import hashlib
 
 def hash_me():
-    raw = hashlib.new('sha256')   #declares new hash 
-    clientPass = getpass("enter your password to be hashed: ") #updates declared hash with password
+    raw = hashlib.new('sha256')   #declares new hash
+    while True:
+        clientPass = getpass("enter your password to be hashed: ") #updates declared hash with password
+        check_clientPass = getpass("re-type password: ") #retype password to check for accuracy
+        if clientPass != check_clientPass: #check if password was entered correctly
+            print("password did not match, try again:") #if passwords do to not match, loop
+        else:
+            break #if passwords match, break out of loop
     byteTransform = bytes(q, 'utf-8')
     raw.update(w) #this is stringing q instead of insert q as stored input TODO FIX
     close = raw.hexdigest()  #digests and hashes password

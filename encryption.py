@@ -1,5 +1,5 @@
 import hashlib
-
+https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
 def hash_me():
     raw = hashlib.new('sha256')   #declares new hash 
     clientPass = input("enter your password to be hashed: ") #updates declared hash with password
